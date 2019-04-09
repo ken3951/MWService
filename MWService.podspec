@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MWService"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "MWService."
   spec.swift_version = "4.2"
 
