@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MWService"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "MWService."
   spec.swift_version = "4.2"
 
@@ -54,8 +54,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "mwk" => "mawk@xym-group.com" }
-  # Or just: spec.author    = "马文奎"
-  # spec.authors            = { "马文奎" => "mawk@xym-group.com" }
+  # Or just: spec.author    = "mwk"
+  # spec.authors            = { "mwk" => "mawk@xym-group.com" }
   spec.social_media_url   = "https://github.com/ken3951"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

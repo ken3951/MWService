@@ -87,11 +87,11 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
     }
     
     //MARK:--UIImagePickerControllerDelegate
-    private func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if picker.sourceType == UIImagePickerController.SourceType.camera {
             if let mediaTypes = picker.mediaTypes.last {
                 if mediaTypes == kUTTypeMovie as String {
