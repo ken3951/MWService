@@ -22,7 +22,7 @@ public func mw_showActionSheet(title: String?, message: String?, buttonItems : A
 }
 
 public extension UIAlertController {
-    public static func mw_create(title: String?,message: String?,buttonItems: Array<Any>!,alertStyle: UIAlertController.Style!,indexBlock:IntCallBack?) -> UIAlertController {
+    static func mw_create(title: String?,message: String?,buttonItems: Array<Any>!,alertStyle: UIAlertController.Style!,indexBlock:IntCallBack?) -> UIAlertController {
         let alertController = self.init(title: title, message: message, preferredStyle: alertStyle)
         for i in 0 ..< buttonItems.count {
             let str:String = buttonItems[i] as! String
@@ -41,7 +41,7 @@ public extension UIAlertController {
     }
     
     //创建alertView弹窗
-    public static func mw_alertView(message: String?,buttonItems: Array<Any>!,indexBlock:IntCallBack?) -> UIAlertController {
+    static func mw_alertView(message: String?,buttonItems: Array<Any>!,indexBlock:IntCallBack?) -> UIAlertController {
         return self.mw_create(title: "提示", message: message, buttonItems: buttonItems, alertStyle: UIAlertController.Style.alert, indexBlock: indexBlock)
     }
 }

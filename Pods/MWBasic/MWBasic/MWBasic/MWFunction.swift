@@ -109,19 +109,27 @@ public func mw_getAppName() -> String {
 }
 
 ///获取视频截图
-public func mw_getScreenShotImageFromLocalVideo(url: URL, completion: @escaping ImageCallBack) {
+public func mw_getScreenShotImageFromLocalVideo(url: URL, seconds: Double = 0.0, completion: @escaping ImageCallBack) {
     DispatchQueue.global().async {
         var shotImage: UIImage?
         let asset = AVURLAsset(url: url, options: nil)
         let gen = AVAssetImageGenerator(asset: asset)
         gen.appliesPreferredTrackTransform = true
-        let time = CMTimeMakeWithSeconds(0.0, preferredTimescale: 600)
+        let time = CMTimeMakeWithSeconds(seconds, preferredTimescale: 10)
         var actualTime: CMTime = CMTime(value: 0, timescale: 0)
         if let image = try? gen.copyCGImage(at: time, actualTime: &actualTime) {
             shotImage = UIImage(cgImage: image)
         }
         completion(shotImage)
     }
+}
+
+///获取视频时长
+public func mw_getLocalVideoSeconds(url: URL) -> CGFloat {
+    let urlAsset = AVURLAsset(url: url)
+    let time = urlAsset.duration
+    let seconds = CGFloat(time.value)/CGFloat(time.timescale)
+    return seconds
 }
 
 ///拨打电话

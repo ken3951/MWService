@@ -1,16 +1,16 @@
 PODS:
-  - MWBasic (0.0.1)
+  - MWBasic (0.0.4)
 
 DEPENDENCIES:
-  - MWBasic
+  - MWBasic (~> 0.0.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MWBasic
 
 SPEC CHECKSUMS:
-  MWBasic: 71e3f5ced269932a035e22003c352cc971ee397f
+  MWBasic: 27891278e78afbc4ec1163d1dbc457017cdd962b
 
-PODFILE CHECKSUM: 12d0358ae1302edd7263388fe3bec5e99ff84543
+PODFILE CHECKSUM: df2d42a949e6d1a27b94dc468ad6dc7209b48566
 
 COCOAPODS: 1.6.1

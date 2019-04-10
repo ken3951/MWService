@@ -29,6 +29,7 @@ public let FIT_Height = UIScreen.main.bounds.size.height / 667.0
 
 //MARK:BlockDefine
 public typealias CallBack = ()->Void
+public typealias CGFloatCallBack = (_ value: CGFloat?) -> Void
 public typealias AnyCallBack = (_ value: Any?) -> Void
 public typealias BoolCallBack = (_ result: Bool) -> Void
 public typealias IntCallBack = (_ index: Int) -> Void

@@ -96,7 +96,12 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             if let mediaTypes = picker.mediaTypes.last {
                 if mediaTypes == kUTTypeMovie as String {
                     let videoUrl = info[UIImagePickerController.InfoKey.mediaURL] as! URL
-                    self.videoCallBack?(videoUrl)
+                    let duration = mw_getLocalVideoSeconds(url: videoUrl)
+                    if duration < CGFloat(videoMinTime) {
+                        mw_showAlert(message: "视频长度应大于\(videoMinTime)秒")
+                    }else{
+                        self.videoCallBack?(videoUrl)
+                    }
                     picker.dismiss(animated: true, completion: nil)
                     return
                 }
