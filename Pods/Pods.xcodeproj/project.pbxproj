@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -66,7 +66,7 @@
 		042CA03CA3E16A53352A2C5894793D63 /* UIImage+MWCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MWCategory.m"; path = "MWBasic/MWBasic/CategoryClass/UIImage+MWCategory.m"; sourceTree = "<group>"; };
 		0BADE32E7396F5A1C1A655C93F550D9E /* MWBasic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MWBasic.xcconfig; sourceTree = "<group>"; };
 		1601F4101F36F57EC1FA1224B4F11193 /* Pods-MWService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MWService-dummy.m"; sourceTree = "<group>"; };
-		172E1527890A8615C1C881C889ACCF75 /* Pods_MWService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		172E1527890A8615C1C881C889ACCF75 /* Pods_MWService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MWService.framework; path = "Pods-MWService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF4030FF8D1D10A70DD158CA19AC91B /* Pods-MWService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MWService-umbrella.h"; sourceTree = "<group>"; };
 		2051E6A7C90409D8B9EC64B29283BBCE /* Date+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/Date+MWExtension.swift"; sourceTree = "<group>"; };
 		23327901F68F4C8CC30DD1C1666C776E /* MWBasic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWBasic-dummy.m"; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		5212B80AA1A66AFF4E06E570BAF93D82 /* UIView+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UIView+MWExtension.swift"; sourceTree = "<group>"; };
 		59F9ABD30F1A9C8EAF6961EC85E94534 /* UIButton+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UIButton+MWExtension.swift"; sourceTree = "<group>"; };
 		5BDBEFC609803C3F52993B6196CBE736 /* UIImageView+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UIImageView+MWExtension.swift"; sourceTree = "<group>"; };
-		5DE36E2592D1662E6F158248B35F09FC /* MWBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE36E2592D1662E6F158248B35F09FC /* MWBasic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MWBasic.framework; path = MWBasic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E476026B0F4129E3FE1A817CBA31F34 /* NSNumber+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/NSNumber+MWCategory.h"; sourceTree = "<group>"; };
 		61A119213C6D0EA105F8B4C94D252174 /* UITextView+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/UITextView+MWExtension.swift"; sourceTree = "<group>"; };
 		622F66C255F98D52EE32B505E76AB97F /* NSString+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/NSString+MWCategory.h"; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		8E88339FCAD6D63B60EEF805DCFDEA27 /* MWFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MWFunction.swift; path = MWBasic/MWBasic/MWFunction.swift; sourceTree = "<group>"; };
 		938BFF90F0A534360FECE8CAECAD4BA1 /* Pods-MWService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MWService-Info.plist"; sourceTree = "<group>"; };
 		950CEB5067D594241BA4B9EB11E84B4D /* UIImage+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/UIImage+MWCategory.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2F83857AA97AFF220966564B5FA16F4 /* String+MWExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MWExtension.swift"; path = "MWBasic/MWBasic/MWExtension/String+MWExtension.swift"; sourceTree = "<group>"; };
 		A495E063C556822DB9F6FAC7060D0B14 /* Pods-MWService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MWService.debug.xcconfig"; sourceTree = "<group>"; };
 		AF9AEE9AB24201D3B9BFB93A5409D6C4 /* NSDate+MWCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MWCategory.h"; path = "MWBasic/MWBasic/CategoryClass/NSDate+MWCategory.h"; sourceTree = "<group>"; };
@@ -228,6 +228,7 @@
 				E3DCCB52334723AE07D712EBC13A8FC4 /* UserDefaults+MWExtension.swift */,
 				00589C5F442A304AAF864E0513AB7AEE /* Support Files */,
 			);
+			name = MWBasic;
 			path = MWBasic;
 			sourceTree = "<group>";
 		};
@@ -487,7 +488,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -510,7 +512,11 @@
 				INFOPLIST_FILE = "Target Support Files/MWBasic/MWBasic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MWBasic/MWBasic.modulemap";
 				PRODUCT_MODULE_NAME = MWBasic;
 				PRODUCT_NAME = MWBasic;
@@ -605,7 +611,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MWService/Pods-MWService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MWService/Pods-MWService.modulemap";
 				OTHER_LDFLAGS = "";
@@ -639,7 +649,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MWService/Pods-MWService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MWService/Pods-MWService.modulemap";
 				OTHER_LDFLAGS = "";
@@ -672,7 +686,11 @@
 				INFOPLIST_FILE = "Target Support Files/MWBasic/MWBasic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MWBasic/MWBasic.modulemap";
 				PRODUCT_MODULE_NAME = MWBasic;
 				PRODUCT_NAME = MWBasic;

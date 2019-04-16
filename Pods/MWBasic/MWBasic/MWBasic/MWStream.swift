@@ -11,7 +11,7 @@ import UIKit
 public typealias MWStreamEvent = (_ data: Any?, _ streamContinue: MWStreamContinue) -> Void
 public typealias MWStreamContinue = (_ data: Any?) -> Void
 
-class MWStream: NSObject {
+public class MWStream: NSObject {
     private var dataValue: Any?
     
     public convenience init(dataValue: Any?) {
