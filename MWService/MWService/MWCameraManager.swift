@@ -77,7 +77,7 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             
             let picker = UIImagePickerController()
             picker.delegate = self
-            picker.allowsEditing = false
+            picker.videoQuality = .typeIFrame960x540
             picker.sourceType = UIImagePickerController.SourceType.camera
             picker.videoMaximumDuration = TimeInterval(videoMaxTime)
             picker.mediaTypes = [kUTTypeMovie] as [String]
