@@ -3,6 +3,6 @@ use_frameworks!
 
 target 'MWService' do
 
-  pod 'MWBasic', '~> 1.0.8'
+  pod 'MWBasic', '~> 1.1.0'
 
 end
