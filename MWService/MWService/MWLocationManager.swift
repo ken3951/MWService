@@ -15,7 +15,7 @@ public typealias MWLocationCompletion = (_ privince: String, _ city: String, _ z
 public class MWLocationManager: NSObject, CLLocationManagerDelegate {
     var manager : CLLocationManager!
     private var locationCompletion : MWLocationCompletion?
-    static let shared = MWLocationManager()
+    public static let shared = MWLocationManager()
 
     @objc public static func shareInstance() -> MWLocationManager {
         return MWLocationManager.shared

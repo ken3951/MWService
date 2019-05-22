@@ -16,7 +16,7 @@
 		3800558A2251BEAC00BA80E3 /* MWCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055842251BEAB00BA80E3 /* MWCameraManager.swift */; };
 		3800558B2251BEAC00BA80E3 /* MWCellLoadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055852251BEAB00BA80E3 /* MWCellLoadService.swift */; };
 		3800558D2251BEAC00BA80E3 /* MWLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055872251BEAB00BA80E3 /* MWLocationManager.swift */; };
-		3800558E2251BEAC00BA80E3 /* ViewControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055882251BEAC00BA80E3 /* ViewControllerService.swift */; };
+		3800558E2251BEAC00BA80E3 /* MWControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380055882251BEAC00BA80E3 /* MWControllerService.swift */; };
 		FF59F7CB175CE7665BBE4A50 /* Pods_MWService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7285D7664497B251B958C3 /* Pods_MWService.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		380055842251BEAB00BA80E3 /* MWCameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCameraManager.swift; sourceTree = "<group>"; };
 		380055852251BEAB00BA80E3 /* MWCellLoadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCellLoadService.swift; sourceTree = "<group>"; };
 		380055872251BEAB00BA80E3 /* MWLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWLocationManager.swift; sourceTree = "<group>"; };
-		380055882251BEAC00BA80E3 /* ViewControllerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerService.swift; sourceTree = "<group>"; };
+		380055882251BEAC00BA80E3 /* MWControllerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWControllerService.swift; sourceTree = "<group>"; };
 		3800558F2251C0DB00BA80E3 /* MWService-bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWService-bridging-Header.h"; sourceTree = "<group>"; };
 		39ABEEFD12430A745F03180E /* Pods-MWService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWService.debug.xcconfig"; path = "Target Support Files/Pods-MWService/Pods-MWService.debug.xcconfig"; sourceTree = "<group>"; };
 		432DCAF21DF1E4A6193902D1 /* Pods-MWService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWService.release.xcconfig"; path = "Target Support Files/Pods-MWService/Pods-MWService.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				380055852251BEAB00BA80E3 /* MWCellLoadService.swift */,
 				380055872251BEAB00BA80E3 /* MWLocationManager.swift */,
 				380055832251BEA800BA80E3 /* MWViewService.swift */,
-				380055882251BEAC00BA80E3 /* ViewControllerService.swift */,
+				380055882251BEAC00BA80E3 /* MWControllerService.swift */,
 			);
 			path = MWService;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				380055892251BEAC00BA80E3 /* MWViewService.swift in Sources */,
 				380055732251BDA400BA80E3 /* ViewController.swift in Sources */,
 				3800558B2251BEAC00BA80E3 /* MWCellLoadService.swift in Sources */,
-				3800558E2251BEAC00BA80E3 /* ViewControllerService.swift in Sources */,
+				3800558E2251BEAC00BA80E3 /* MWControllerService.swift in Sources */,
 				380055712251BDA400BA80E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

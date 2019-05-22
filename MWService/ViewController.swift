@@ -19,8 +19,10 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        cameraManager.startRecordVideo(maxTime: 60, minTime: 5) { (url) in
-            print(url.absoluteString)
+        cameraManager.startRecordPhotoAndVideo(imageCompressSize: 1000, imageCompletion: { (image) in
+            print("拍照成功")
+        }, maxTime: 10, minTime: 5) { (url) in
+            print("拍摄成功,videoUrl=\(url.absoluteString)")
         }
     }
 

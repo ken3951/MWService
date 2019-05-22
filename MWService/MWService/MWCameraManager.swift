@@ -53,6 +53,28 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
         return true
     }
     
+    ///拍照和视频
+    @objc public func startRecordPhotoAndVideo(imageCompressSize: Int = 1000, imageCompletion: @escaping MWCameraManagerImageCallBack, maxTime: Int = 20, minTime: Int = 0, videoCompletion: @escaping MWCameraManagerVideoCallBack) {
+        
+        if checkPermissionSuccess() {
+            self.imgCallBack = imageCompletion
+            self.imageCompressSize = imageCompressSize
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = UIImagePickerController.SourceType.camera
+            
+            self.videoCallBack = videoCompletion
+            self.videoMaxTime = maxTime
+            self.videoMinTime = minTime
+            picker.videoQuality = .typeIFrame1280x720
+            picker.videoMaximumDuration = TimeInterval(videoMaxTime)
+            picker.mediaTypes = [kUTTypeMovie,kUTTypeImage] as [String]
+
+            mw_getCurrentRootVC()?.present(picker, animated: true, completion: nil)
+        }
+        
+    }
+    
     ///拍照
     @objc public func startRecordPhoto(imageCompressSize: Int = 1000, completion: @escaping MWCameraManagerImageCallBack) {
         
@@ -61,6 +83,7 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             self.imageCompressSize = imageCompressSize
             let picker = UIImagePickerController()
             picker.delegate = self
+            picker.mediaTypes = [kUTTypeImage] as [String]
             picker.sourceType = UIImagePickerController.SourceType.camera
             mw_getCurrentRootVC()?.present(picker, animated: true, completion: nil)
         }
@@ -93,8 +116,8 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if picker.sourceType == UIImagePickerController.SourceType.camera {
-            if let mediaTypes = picker.mediaTypes.last {
-                if mediaTypes == kUTTypeMovie as String {
+            if let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String {
+                if mediaType == (kUTTypeMovie as String) {
                     let videoUrl = info[UIImagePickerController.InfoKey.mediaURL] as! URL
                     let duration = mw_getLocalVideoSeconds(url: videoUrl)
                     if duration >= CGFloat(videoMinTime) {
@@ -107,13 +130,17 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
                     }
                     return
                 }
+                
+                if mediaType == (kUTTypeImage as String) {
+                    if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                        let image = originalImage.mw_scalTo(kb: imageCompressSize)
+                        self.imgCallBack?(image)
+                        picker.dismiss(animated: true, completion: nil)
+                        return
+                    }
+                }
             }
-            if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                let image = originalImage.mw_scalTo(kb: imageCompressSize)
-                self.imgCallBack?(image)
-                picker.dismiss(animated: true, completion: nil)
-                return
-            }
+            
         }
         picker.dismiss(animated: true, completion: nil)
     }
