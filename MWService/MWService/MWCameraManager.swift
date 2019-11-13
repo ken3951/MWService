@@ -69,7 +69,7 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             picker.videoQuality = .typeIFrame1280x720
             picker.videoMaximumDuration = TimeInterval(videoMaxTime)
             picker.mediaTypes = [kUTTypeMovie,kUTTypeImage] as [String]
-
+            picker.modalPresentationStyle = .fullScreen
             mw_getCurrentRootVC()?.present(picker, animated: true, completion: nil)
         }
         
@@ -85,6 +85,7 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             picker.delegate = self
             picker.mediaTypes = [kUTTypeImage] as [String]
             picker.sourceType = UIImagePickerController.SourceType.camera
+            picker.modalPresentationStyle = .fullScreen
             mw_getCurrentRootVC()?.present(picker, animated: true, completion: nil)
         }
 
@@ -104,6 +105,7 @@ public class MWCameraManager: NSObject, UIImagePickerControllerDelegate, UINavig
             picker.sourceType = UIImagePickerController.SourceType.camera
             picker.videoMaximumDuration = TimeInterval(videoMaxTime)
             picker.mediaTypes = [kUTTypeMovie] as [String]
+            picker.modalPresentationStyle = .fullScreen
             mw_getCurrentRootVC()?.present(picker, animated: true, completion: nil)
         }
         
